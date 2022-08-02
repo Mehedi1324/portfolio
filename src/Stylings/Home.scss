@@ -1,0 +1,294 @@
+// Banner___________________________
+
+.bnr__container {
+  width: 100%;
+  .banner {
+    width: 80%;
+    margin: auto;
+    .row {
+      align-items: center;
+    }
+  }
+}
+
+// About Me___________________
+
+.about__container {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 100px !important;
+  .about {
+    margin-top: 50px !important;
+    width: 100%;
+    margin: auto;
+    border: 1px solid #80808036;
+    padding: 16px 0px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px #000000a8;
+    p {
+      text-align: left;
+    }
+    .row {
+      align-items: center;
+    }
+    p {
+      padding: 0px 10px;
+    }
+    .about__img {
+      width: 100%;
+      margin: auto;
+
+      text-align: center;
+    }
+    img {
+      width: 75%;
+      mask-image: content;
+    }
+  }
+}
+
+// Skills ________________________________
+
+.skill__container {
+  margin-top: 100px !important;
+  width: 80%;
+  margin: auto;
+  .skill__nav {
+    margin-bottom: 30px;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    font-size: 18px;
+  }
+  a:hover,
+  .active {
+    color: white;
+    padding-bottom: 10px;
+
+    border-bottom: 5px solid rgb(33, 202, 47);
+  }
+}
+
+// FontEnd________________
+.h {
+  box-shadow: 0px 4px 5px 0px #833b19;
+}
+.c {
+  box-shadow: 0px 4px 5px 0px #12608b;
+}
+.j {
+  box-shadow: 0px 4px 5px 0px #8f7d19;
+}
+.b {
+  box-shadow: 0px 4px 5px 0px #39167a;
+}
+.w {
+  box-shadow: 0px 4px 5px 0px #7f8288;
+}
+.r {
+  box-shadow: 0px 4px 5px 0px #4f7f8c;
+}
+.m {
+  box-shadow: 0px 4px 5px 0px #115681;
+}
+.t {
+  box-shadow: 0px 4px 5px 0px #2b6c70;
+}
+.s {
+  box-shadow: 0px 4px 5px 0px #56773e;
+}
+.n {
+  box-shadow: 0px 4px 5px 0px #20644c;
+}
+.e {
+  box-shadow: 0px 4px 5px 0px #56773e;
+}
+.mo {
+  box-shadow: 0px 4px 5px 0px #5e626b;
+}
+.f {
+  box-shadow: 0px 4px 5px 0px #8f6522;
+}
+.g {
+  box-shadow: 0px 4px 5px 0px #893a27;
+}
+.h {
+  box-shadow: 0px 4px 5px 0px #50436b;
+}
+.fi {
+  box-shadow: 0px 4px 5px 0px #8f4a3a;
+}
+.ne {
+  box-shadow: 0px 4px 5px 0px #227574;
+}
+.p {
+  box-shadow: 0px 4px 5px 0px #2a4a69;
+}
+
+.skill {
+  .partner__img {
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 20px !important;
+    transition: 500ms;
+    border: 1px solid #80808036;
+    padding: 15% 0px;
+    transition: 500ms;
+    width: 100% !important;
+    height: 90%;
+    border-radius: 25px;
+
+    img {
+      width: 40%;
+
+      margin: auto;
+    }
+  }
+  .partner__img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+  img {
+    width: 120px;
+    margin: auto;
+  }
+  h5 {
+    text-align: center;
+  }
+}
+
+// Projects____________________
+
+.projects {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 100px !important;
+  .container {
+    margin-top: 50px;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// Contact_________________________
+
+.contact {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px !important;
+  text-align: center;
+  .row {
+    align-items: center;
+  }
+  .form {
+    input {
+      width: 100%;
+      margin: 8px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      margin: 8px;
+      padding: 10px;
+    }
+    .sub__btn {
+      font-weight: 500;
+      color: white;
+      background-color: #27ae60;
+      border: none;
+      transition: 300ms;
+    }
+    .sub__btn:hover {
+      font-weight: 500;
+      background-color: #2b3365;
+      box-shadow: 0px 2px 5px 1px #248199;
+    }
+    @media screen and (max-width: 1080px) and (min-width: 950px) {
+      input {
+        margin: 5px;
+        padding: 8px;
+      }
+      textarea {
+        margin: 5px;
+        padding: 8px;
+      }
+    }
+    @media screen and (max-width: 950px) and (min-width: 768px) {
+      input {
+        margin: 3px;
+        padding: 5px;
+      }
+      textarea {
+        margin: 3px;
+        padding: 5px;
+      }
+    }
+  }
+}
+// Navbar styling____________
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 10%;
+  // right: 10px;
+  a {
+    color: #aebac8;
+    font-size: 26px;
+    padding: 1rem;
+    width: 55px;
+    display: flex;
+    height: 55px;
+    background-color: #454e56;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  a:hover {
+    color: white;
+    background-color: #27ae60;
+  }
+  .active {
+    color: white;
+    background-color: #27ae60;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    a {
+      padding: 0.5rem !important;
+      width: 45px;
+      height: 45px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 850px) {
+  .nav {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+    top: auto;
+    background-color: #2a2e35;
+    z-index: 11;
+  }
+}
