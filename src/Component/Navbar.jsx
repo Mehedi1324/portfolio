@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import '../Stylings/Home.scss';
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaFlickr } from 'react-icons/fa';
 import { RiGalleryFill } from 'react-icons/ri';
 import { IoMdPerson } from 'react-icons/io';
-import { GiSkills } from 'react-icons/gi';
 import { MdContactMail } from 'react-icons/md';
 const Navbar = () => {
   const [activeNav, setActive] = useState('#home');
@@ -28,7 +27,7 @@ const Navbar = () => {
         onClick={() => setActive('#skill')}
         className={activeNav === '#skill' ? 'active' : ''}
       >
-        <GiSkills />
+        <FaFlickr />
       </a>
       <a
         href="#portfolio"

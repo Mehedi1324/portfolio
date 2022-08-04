@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@100&display=swap');
+
 .App {
   background-color: #273748;
   background-image: linear-gradient(180deg, #1f232f 0%, #1f232fad 100%);
   opacity: 1;
   color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
 }
+h3 {
+  font-size: 35px !important;
+  font-weight: 600 !important;
+}
+
 :focus {
   outline: none;
 }

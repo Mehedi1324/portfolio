@@ -11,12 +11,12 @@ const About = () => {
       </span>
       <div className="about">
         <Row className="row">
-          <Col md={4} lg={4} sm={12} xs={12}>
+          <Col md={6} lg={6} sm={12} xs={12}>
             <div className="about__img">
-              <img src="./images/dp3.png" alt="DP" />
+              <img src="./images/mmh.jpg" alt="DP" />
             </div>
           </Col>
-          <Col md={8} lg={8} sm={12} xs={12}>
+          <Col md={6} lg={6} sm={12} xs={12}>
             <p>
               Hi, I'm Mehedi. I have a serious passion for Web Development and
               Designing. I can conjure a website from noting into existance,

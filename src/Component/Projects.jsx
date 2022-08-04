@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-
-import { FaAlignLeft } from 'react-icons/fa';
+import { MdOutlineScreenSearchDesktop } from 'react-icons/md';
+import { FaAlignLeft, FaGithub } from 'react-icons/fa';
 const Projects = () => {
   return (
     <div className="projects" id="portfolio">
@@ -14,20 +14,54 @@ const Projects = () => {
         <Row>
           <Col md={6} lg={4} sm={12} xs={12}>
             <div className="container">
-              <img src="" alt="project1" />
-              <div className="content"></div>
+              <img src="./images/ecom_pad.png" alt="project1" />
+              <div className="content">
+                <div className="content__item">
+                  <FaGithub />
+                  <MdOutlineScreenSearchDesktop />
+                </div>
+              </div>
+              <div className="content2">
+                <h5>M-Shop </h5>
+                <p>
+                  "E-Commerce online shop, sales latest and modern electronic
+                  gadgets"
+                </p>
+              </div>
             </div>
           </Col>
           <Col md={6} lg={4} sm={12} xs={12}>
             <div className="container">
-              <img src="" alt="project1" />
-              <div className="content"></div>
+              <img src="./images/guru_tab.png" alt="project1" />
+              <div className="content">
+                <div className="content__item">
+                  <FaGithub />
+                  <MdOutlineScreenSearchDesktop />
+                </div>
+              </div>
+              <div className="content2">
+                <h5>Travel Guru </h5>
+                <p>
+                  "Travel agency which provides Flights as well as Residence"
+                </p>
+              </div>
             </div>
           </Col>
           <Col md={6} lg={4} sm={12} xs={12}>
             <div className="container">
-              <img src="" alt="project1" />
-              <div className="content"></div>
+              <img src="./images/medikit_tab.png" alt="project1" />
+              <div className="content">
+                <div className="content__item">
+                  <FaGithub />
+                  <MdOutlineScreenSearchDesktop />
+                </div>
+              </div>
+              <div className="content2">
+                <h5>Medi-Kit </h5>
+                <p>
+                  "Online shop which provides emergency medical accessories"
+                </p>
+              </div>
             </div>
           </Col>
         </Row>

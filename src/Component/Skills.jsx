@@ -1,39 +1,95 @@
-import React, { useState } from 'react';
-import { Row, Col } from 'react-bootstrap';
 import { FaAlignLeft } from 'react-icons/fa';
-import { Outlet } from 'react-router';
-import { NavLink } from 'react-router-dom';
-import FrontEnd from './FrontEnd';
+import { Row, Col } from 'react-bootstrap';
+import { BsPatchCheckFill } from 'react-icons/bs';
 const Skills = () => {
-  const [outlet, setOutlet] = useState(false);
   return (
     <div className="skill__container" id="skill">
-      <span style={{ color: '#27ae60' }}>
-        <h3>
-          Skills I have <FaAlignLeft />
-        </h3>
-      </span>
-      {/* Skills__________ */}
-      <nav className="skill__nav">
-        <Row>
-          <Col md={4} lg={4} sm={12}>
-            <NavLink to="frontend" onClick={() => setOutlet(true)}>
-              Front End
-            </NavLink>
-          </Col>
-          <Col md={4} lg={4} sm={12}>
-            <NavLink to="backend" onClick={() => setOutlet(true)}>
-              Back End
-            </NavLink>
-          </Col>
-          <Col md={4} lg={4} sm={12}>
-            <NavLink to="others" onClick={() => setOutlet(true)}>
-              Others
-            </NavLink>
-          </Col>
-        </Row>
-      </nav>
-      {outlet === false ? <FrontEnd /> : <Outlet className="outlet" />}
+      <div className="skill">
+        <span style={{ color: '#27ae60' }}>
+          <h3>
+            Skills I have <FaAlignLeft />
+          </h3>
+        </span>
+        <div className="skill__card">
+          <Row>
+            <Col md={6} lg={4} sm={12} xs={12}>
+              <div className="skill__details">
+                <h5>Front End</h5>
+                <div className="skills__info">
+                  <p>
+                    <BsPatchCheckFill /> HTLM
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> css
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> JavaScript
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> BootStrap
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> React JS
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> WordPress
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Tailwind CSS
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Material UI
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> SASS
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={6} lg={4} sm={12} xs={12}>
+              <div className="skill__details">
+                <h5>Back End</h5>
+                <div className="skills__info">
+                  <p>
+                    <BsPatchCheckFill /> Node JS
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Express JS
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Mongo DB
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Firebase
+                  </p>
+                </div>
+              </div>
+            </Col>
+            <Col md={6} lg={4} sm={12} xs={12}>
+              <div className="skill__details">
+                <h5>Others</h5>
+                <div className="skills__info">
+                  <p>
+                    <BsPatchCheckFill /> GitHub
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Heroku
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Figma
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Netlify
+                  </p>
+                  <p>
+                    <BsPatchCheckFill /> Python
+                  </p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </div>
     </div>
   );
 };
