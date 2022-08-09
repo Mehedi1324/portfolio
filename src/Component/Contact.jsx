@@ -1,9 +1,32 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { FaAlignLeft } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import Lottie from 'react-lottie';
 import data from './../meet1.json';
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_6uf2rlm',
+        'template_3oj1j0m',
+        form.current,
+        '85d415elI-p0bIdzf'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('message sent');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -22,19 +45,34 @@ const Contact = () => {
             <Lottie options={defaultOptions} />{' '}
           </Col>
           <Col md={6} lg={6} sm={12} xs={12}>
-            <form className="form">
+            <form className="form" ref={form} onSubmit={sendEmail}>
               <Row className="row2">
                 <Col md={6} lg={6} sm={12} xs={12}>
-                  <input type="text" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="user_name"
+                    placeholder="Name"
+                    required
+                  />
                 </Col>
                 <Col md={6} lg={6} sm={12} xs={12}>
                   <input type="text" placeholder="Phone (optional)" />
                 </Col>
                 <Col md={12} lg={12} sm={12} xs={12}>
-                  <input type="text" placeholder="Email" required />
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    name="user_email"
+                    required
+                  />
                 </Col>
                 <Col md={12} lg={12} sm={12} xs={12}>
-                  <textarea cols="10" rows="5" placeholder="Message" />
+                  <textarea
+                    cols="10"
+                    rows="5"
+                    name="message"
+                    placeholder="Message"
+                  />
                 </Col>
                 <Col md={12} lg={12} sm={12} xs={12}>
                   <input type="submit" value="Submit" className="sub__btn" />

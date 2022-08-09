@@ -41,7 +41,14 @@ const Banner = () => {
               </h3>
               <div>
                 <input type="submit" className="banner__btn" value="Get CV" />
-                <input type="submit" className="banner__btn" value="Hire me" />
+                <a href="#contact">
+                  {' '}
+                  <input
+                    type="submit"
+                    className="banner__btn"
+                    value="Hire me"
+                  />
+                </a>
               </div>
             </div>
           </Col>
