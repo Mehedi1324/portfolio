@@ -312,6 +312,8 @@ h3 {
   flex-direction: column;
   position: fixed;
   top: 10%;
+  width: 100%;
+  overflow: hidden;
   // right: 10px;
   a {
     color: #aebac8;
@@ -336,6 +338,7 @@ h3 {
 
 @media screen and (max-width: 950px) {
   .nav {
+    overflow: hidden;
     a {
       padding: 0.5rem !important;
       width: 45px;
@@ -347,6 +350,7 @@ h3 {
 }
 @media screen and (max-width: 850px) {
   .nav {
+    overflow: hidden;
     flex-direction: row;
     width: 100%;
     justify-content: center;

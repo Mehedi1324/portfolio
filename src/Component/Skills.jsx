@@ -6,14 +6,14 @@ const Skills = () => {
     <div className="skill__container" id="skill">
       <div className="skill">
         <span style={{ color: '#27ae60' }}>
-          <h3>
+          <h3 data-aos="fade-down">
             Skills I have <FaAlignLeft />
           </h3>
         </span>
         <div className="skill__card">
           <Row>
             <Col md={6} lg={4} sm={12} xs={12}>
-              <div className="skill__details">
+              <div className="skill__details" data-aos="fade-right">
                 <h5>Front End</h5>
                 <div className="skills__info">
                   <p>
@@ -47,7 +47,7 @@ const Skills = () => {
               </div>
             </Col>
             <Col md={6} lg={4} sm={12} xs={12}>
-              <div className="skill__details">
+              <div className="skill__details" data-aos="fade-up">
                 <h5>Back End</h5>
                 <div className="skills__info">
                   <p>
@@ -66,7 +66,7 @@ const Skills = () => {
               </div>
             </Col>
             <Col md={6} lg={4} sm={12} xs={12}>
-              <div className="skill__details">
+              <div className="skill__details" data-aos="fade-left">
                 <h5>Others</h5>
                 <div className="skills__info">
                   <p>

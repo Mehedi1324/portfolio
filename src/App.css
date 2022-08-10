@@ -8,6 +8,8 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   scroll-behavior: smooth;
+  width: 100%;
+  overflow: hidden;
 }
 h3 {
   font-size: 35px !important;

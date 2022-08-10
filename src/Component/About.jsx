@@ -1,22 +1,23 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { FaAlignLeft } from 'react-icons/fa';
+
 const About = () => {
   return (
     <div className="about__container" id="about">
       <span style={{ color: '#27ae60', marginTop: '10%' }}>
-        <h3>
+        <h3 data-aos="fade-down">
           About Me <FaAlignLeft />
         </h3>
       </span>
       <div className="about">
         <Row className="row">
-          <Col md={6} lg={6} sm={12} xs={12}>
+          <Col md={6} lg={6} sm={12} xs={12} data-aos="fade-right">
             <div className="about__img">
               <img src="./images/mmh.jpg" alt="DP" />
             </div>
           </Col>
-          <Col md={6} lg={6} sm={12} xs={12}>
+          <Col md={6} lg={6} sm={12} xs={12} data-aos="fade-left">
             <p>
               Hi, I'm Mehedi. I have a serious passion for Web Development and
               Designing. I can conjure a website from noting into existance,

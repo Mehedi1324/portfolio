@@ -33,27 +33,35 @@ const Banner = () => {
           <Col sm={12} lg={6} xs={12} md={6} className="col">
             <div className="hi">
               {' '}
-              <h4>I'M</h4>
-              <h2>MEHEDI HASAN</h2>
-              <h3 className="typewriter">
+              <h4 data-aos="fade-down-right">I'M</h4>
+              <h2 data-aos="fade-down-right">MEHEDI HASAN</h2>
+              <h3 data-aos="fade-down-right" className="typewriter">
                 {text}
                 <Cursor />
               </h3>
               <div>
-                <input type="submit" className="banner__btn" value="Get CV" />
+                <input
+                  type="submit"
+                  className="banner__btn"
+                  value="Get CV"
+                  data-aos="zoom-out-up"
+                  data-aos-offset="120"
+                />
                 <a href="#contact">
                   {' '}
                   <input
                     type="submit"
                     className="banner__btn"
                     value="Hire me"
+                    data-aos="zoom-out-up"
+                    data-aos-offset="120"
                   />
                 </a>
               </div>
             </div>
           </Col>
           <Col sm={12} lg={6} xs={12} md={6}>
-            <div style={{ width: '100%' }}>
+            <div style={{ width: '100%' }} data-aos="zoom-in-left">
               <Lottie options={defaultOptions} />{' '}
             </div>
           </Col>
