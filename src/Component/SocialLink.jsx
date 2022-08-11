@@ -6,7 +6,7 @@ import { SiUpwork } from 'react-icons/si';
 
 const SocialLink = () => {
   return (
-    <nav data-aos="zoom-in" className=" socila__icons">
+    <nav className=" socila__icons">
       <a href="https://www.facebook.com/profile.php?id=100007574026014">
         <FaFacebookF />
       </a>
