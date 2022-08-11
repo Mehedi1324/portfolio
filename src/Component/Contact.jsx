@@ -33,90 +33,92 @@ const Contact = () => {
     animationData: data,
   };
   return (
-    <div className="contact" id="contact">
-      <span style={{ color: '#27ae60' }}>
-        <h3 data-aos="fade-down">
-          Contact Me <FaAlignLeft />
-        </h3>
-      </span>
-      <div className="form">
-        <Row className="row">
-          <Col md={6} lg={6} sm={12} xs={12} data-aos="zoom-in">
-            <Lottie options={defaultOptions} />{' '}
-          </Col>
-          <Col md={6} lg={6} sm={12} xs={12}>
-            <form className="form" ref={form} onSubmit={sendEmail}>
-              <Row className="row2">
-                <Col
-                  md={6}
-                  lg={6}
-                  sm={12}
-                  xs={12}
-                  data-aos="fade-left"
-                  data-aos-delay="50"
-                >
-                  <input
-                    type="text"
-                    name="user_name"
-                    placeholder="Name"
-                    required
-                  />
-                </Col>
-                <Col
-                  md={6}
-                  lg={6}
-                  sm={12}
-                  xs={12}
-                  data-aos="fade-left"
-                  data-aos-delay="60"
-                >
-                  <input type="text" placeholder="Phone (optional)" />
-                </Col>
-                <Col
-                  md={12}
-                  lg={12}
-                  sm={12}
-                  xs={12}
-                  data-aos="fade-left"
-                  data-aos-delay="70"
-                >
-                  <input
-                    type="text"
-                    placeholder="Email"
-                    name="user_email"
-                    required
-                  />
-                </Col>
-                <Col
-                  md={12}
-                  lg={12}
-                  sm={12}
-                  xs={12}
-                  data-aos="fade-left"
-                  data-aos-delay="80"
-                >
-                  <textarea
-                    cols="10"
-                    rows="5"
-                    name="message"
-                    placeholder="Message"
-                  />
-                </Col>
-                <Col
-                  md={12}
-                  lg={12}
-                  sm={12}
-                  xs={12}
-                  data-aos="fade-left"
-                  data-aos-delay="90"
-                  data-aos-offset="200"
-                >
-                  <input type="submit" value="Submit" className="sub__btn" />
-                </Col>
-              </Row>
-            </form>
-          </Col>
-        </Row>
+    <div className="contact__container">
+      <div className="contact" id="contact">
+        <span style={{ color: '#27ae60' }}>
+          <h3 data-aos="fade-down">
+            Contact Me <FaAlignLeft />
+          </h3>
+        </span>
+        <div className="form">
+          <Row className="row">
+            <Col md={6} lg={6} sm={12} xs={12} data-aos="zoom-in">
+              <Lottie options={defaultOptions} />{' '}
+            </Col>
+            <Col md={6} lg={6} sm={12} xs={12}>
+              <form className="form" ref={form} onSubmit={sendEmail}>
+                <Row className="row2">
+                  <Col
+                    md={6}
+                    lg={6}
+                    sm={12}
+                    xs={12}
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                  >
+                    <input
+                      type="text"
+                      name="user_name"
+                      placeholder="Name"
+                      required
+                    />
+                  </Col>
+                  <Col
+                    md={6}
+                    lg={6}
+                    sm={12}
+                    xs={12}
+                    data-aos="fade-left"
+                    data-aos-delay="60"
+                  >
+                    <input type="text" placeholder="Phone (optional)" />
+                  </Col>
+                  <Col
+                    md={12}
+                    lg={12}
+                    sm={12}
+                    xs={12}
+                    data-aos="fade-left"
+                    data-aos-delay="70"
+                  >
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      name="user_email"
+                      required
+                    />
+                  </Col>
+                  <Col
+                    md={12}
+                    lg={12}
+                    sm={12}
+                    xs={12}
+                    data-aos="fade-left"
+                    data-aos-delay="80"
+                  >
+                    <textarea
+                      cols="10"
+                      rows="5"
+                      name="message"
+                      placeholder="Message"
+                    />
+                  </Col>
+                  <Col
+                    md={12}
+                    lg={12}
+                    sm={12}
+                    xs={12}
+                    data-aos="fade-left"
+                    data-aos-delay="90"
+                    data-aos-offset="200"
+                  >
+                    <input type="submit" value="Submit" className="sub__btn" />
+                  </Col>
+                </Row>
+              </form>
+            </Col>
+          </Row>
+        </div>
       </div>
     </div>
   );
