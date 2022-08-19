@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import Lottie from 'react-lottie';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import 'react-simple-typewriter/dist/index';
-import data from './../bnr.json';
+import data from './../bnr1.json';
 import '../Stylings/Home.scss';
 import SocialLink from './SocialLink';
 const Banner = () => {
